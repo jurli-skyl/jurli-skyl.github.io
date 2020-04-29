@@ -162,6 +162,21 @@ def generateFiles():
 <meta property="og:title" content="{title}">
 <meta property="og:image" content="{url}img/{cover}">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+"""
+            script1 = """
+<script>
+  (function(d) {
+    var config = {
+      kitId: 'hdm7ghc',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+"""
+
+            templateOfHead2 = f"""
 </head>
 <body>
 <header>
@@ -185,7 +200,7 @@ def generateFiles():
 <div class="main">
 <div class="fixed-action-btn">
 <a class="btn-floating btn-large blue"><i class="material-icons button-color">bubble_chart</i></a>"""
-            script = """
+            script2 = """
 <script>
 document.addEventListener("DOMContentLoaded", function() {
 var elems = document.querySelectorAll(".fixed-action-btn");
@@ -194,15 +209,16 @@ direction: "top"
 });
 });
 </script>"""
-            templateOfHead2 = """
+            templateOfHead3 = """
 <ul class="google">
 {0}
 </ul>
 </div>"""
 
             f.write(templateOfHead1)
-            f.write(script)
-            f.write(templateOfHead2.replace("{0}", generateButtons(config)))
+            f.write(script1)
+            f.write(templateOfHead2)
+            f.write(templateOfHead3.replace("{0}", generateButtons(config)))
             global muistoFlag
             muistoFlag = False
             for i, line in enumerate(lines):
