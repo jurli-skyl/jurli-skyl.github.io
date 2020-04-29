@@ -8,6 +8,7 @@ body {
 h1 {
   color: #005b7a;
   font-family: ten-mincho, serif;
+  font-style: normal;
   font-feature-settings: "palt";
   font-size: 28px;
   font-style: normal;
@@ -19,6 +20,7 @@ h1 {
 h2 {
   color: #005b7a;
   font-family: ten-mincho, serif;
+  font-style: normal;
   font-weight: 400;
   font-feature-settings: "palt";
   font-size: 21px;
@@ -29,6 +31,7 @@ h2 {
 h3 {
   color: #e4c76f;
   font-family: ten-mincho, serif;
+  font-style: normal;
   font-size: 18px;
   font-weight: 400;
   font-feature-settings: "palt";
@@ -206,6 +209,7 @@ header {
 .nav .title h1 {
   color: #333;
   font-family: ten-mincho, serif;
+  font-style: normal;
   font-feature-settings: "palt";
   font-size: 14px;
   font-weight: 400;
@@ -336,6 +340,7 @@ i.fab {
 .link .title p {
   color: #333;
   font-family: ten-mincho, serif;
+  font-style: normal;
   font-feature-settings: "palt";
   font-size: 15px;
   font-weight: 400;
@@ -350,6 +355,7 @@ i.fab {
 .link .title p.data {
   color: #545d87;
   font-family: ten-mincho, serif;
+  font-style: normal;
   font-size: 12px;
   font-weight: 400;
   margin-top: 10px;
@@ -425,6 +431,7 @@ footer {
 footer p {
   color: #333;
   font-family: ten-mincho, serif;
+  font-style: normal;
   font-feature-settings: "palt";
   font-size: 15px;
   font-weight: 400;
