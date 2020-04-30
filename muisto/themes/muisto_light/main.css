@@ -7,7 +7,7 @@ body {
 
 h1 {
   color: #005b7a;
-  font-family: ten-mincho, serif;
+  font-family: 'ten-mincho', serif;
   font-style: normal;
   font-feature-settings: "palt";
   font-size: 28px;
