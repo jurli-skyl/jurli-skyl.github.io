@@ -167,7 +167,7 @@ def generateFiles():
 <script>
   (function(d) {
     var config = {
-      kitId: 'hdm7ghc',
+      kitId: 'ulh2rhh',
       scriptTimeout: 3000,
       async: true
     },
